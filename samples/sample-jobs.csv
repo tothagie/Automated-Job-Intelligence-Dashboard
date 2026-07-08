@@ -1,0 +1,7 @@
+﻿JobID,Date Found,Company,Position,Location,Source,URL,Description,Score,Status,Notes,UniqueKey
+"JOB001,2026-07-08,Example Mobility GmbH,Business Analyst,Vienna,Austria,Karriere.at,https://example.com/job001,""Business process analysis and requirements engineering"",85,New,,examplemobility_businessanalyst_vienna"
+"JOB002,2026-07-08,Digital Solutions AG,Operations Analyst,Vienna,Austria,LinkedIn Alerts,https://example.com/job002,""Operational improvement and workflow automation"",80,Review,,digitalsolutions_operationsanalyst_vienna"
+"JOB003,2026-07-08,Smart City Systems GmbH,Data Analyst,Vienna,Austria,Karriere.at,https://example.com/job003,""Data analysis reporting and dashboard development"",90,Applied,,smartcitysystems_dataanalyst_vienna"
+"JOB004,2026-07-08,Transport Technology GmbH,Product Analyst,Vienna,Austria,LinkedIn Alerts,https://example.com/job004,""Digital product analytics and stakeholder management"",82,New,,transporttechnology_productanalyst_vienna"
+"JOB005,2026-07-08,Example Mobility GmbH,Business Analyst,Vienna,Austria,LinkedIn Alerts,https://example.com/job001,""Business process analysis and requirements engineering"",85,Duplicate,Same vacancy detected from another source,examplemobility_businessanalyst_vienna"
+"JOB006,2026-07-08,Cloud Operations GmbH,Process Specialist,Vienna,Austria,Karriere.at,https://example.com/job006,""Process optimization and automation support"",78,New,,cloudoperations_processspecialist_vienna"
