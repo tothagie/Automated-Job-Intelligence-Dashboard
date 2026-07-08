@@ -61,3 +61,9 @@ This project demonstrates end-to-end solution design rather than simply writing 
 ## Roadmap
 
 The current version serves as the foundation for a broader Job Market Intelligence platform. Planned enhancements include additional job portals, configurable search profiles, Power BI dashboards, trend analysis, salary extraction and automated reporting.
+
+## Demo
+
+Example output from the automated job intelligence database:
+
+![Job Database Preview](images/job_database_preview.png)
