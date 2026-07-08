@@ -82,6 +82,8 @@ This enables the dataset to remain continuously updated without manual intervent
 
 ## Current Workflow
 
+![Current Workflow](../images/workflow.png)
+
 ```text
 Collect Data
       │
