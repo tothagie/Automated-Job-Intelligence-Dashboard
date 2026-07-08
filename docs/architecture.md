@@ -17,29 +17,7 @@ The architecture has been designed to allow additional job sources to be integra
 
 ## Architecture
 
-```
-                Karriere.at
-                      │
-                      │
-      LinkedIn Job Alert Emails
-                      │
-                      ▼
-            Google Apps Script
-                      │
-        Data Collection & Parsing
-                      │
-                      ▼
-         Data Standardization
-                      │
-                      ▼
-          Duplicate Detection
-                      │
-                      ▼
-          Google Sheets Database
-                      │
-                      ▼
-            Daily Updated Dataset
-```
+![Solution Architecture](../images/architecture.png)
 
 ---
 
