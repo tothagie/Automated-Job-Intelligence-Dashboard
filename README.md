@@ -66,4 +66,4 @@ The current version serves as the foundation for a broader Job Market Intelligen
 
 Example output from the automated job intelligence database:
 
-![Job Database Preview](images/job_database_preview.png)
+![Job Database Preview](images/job-database-preview.png)
