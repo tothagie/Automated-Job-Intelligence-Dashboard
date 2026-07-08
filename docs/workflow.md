@@ -84,28 +84,6 @@ This enables the dataset to remain continuously updated without manual intervent
 
 ![Current Workflow](../images/workflow.png)
 
-```text
-Collect Data
-      │
-      ▼
-Extract Fields
-      │
-      ▼
-Standardize Data
-      │
-      ▼
-Validate Records
-      │
-      ▼
-Detect Duplicates
-      │
-      ▼
-Store in Google Sheets
-      │
-      ▼
-Updated Job Database
-```
-
 ---
 
 ## Future Enhancements
