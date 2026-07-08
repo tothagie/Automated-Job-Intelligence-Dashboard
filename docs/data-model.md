@@ -2,9 +2,11 @@
 
 ## Overview
 
-The automation stores all collected job postings in a centralized Google Sheets database.
+The automation stores collected job opportunities in a centralized Google Sheets database.
 
-Each row represents a single standardized job posting, regardless of the original source. The common structure enables filtering, reporting and future analytics without requiring source-specific processing.
+Each row represents a single job posting collected from an external source. The data model combines operational tracking fields, source information and technical attributes required for data quality management and duplicate prevention.
+
+The standardized structure allows efficient filtering, monitoring and future analysis of job market data.
 
 ---
 
@@ -12,53 +14,64 @@ Each row represents a single standardized job posting, regardless of the origina
 
 | Field | Description |
 |--------|-------------|
-| Job Title | Position title extracted from the source |
-| Company | Hiring company |
-| Location | Job location |
-| Source | Origin of the job posting (e.g. Karriere.at or LinkedIn Alerts) |
-| URL | Direct link to the job advertisement |
-| Publication Date | Original publication date, when available |
-| Collection Date | Date the automation collected the record |
-| Status | Optional tracking field (e.g. New, Applied, Interview, Closed) |
-| Duplicate | Indicates whether the posting has already been processed |
+| JobID | Unique identifier assigned to each job record |
+| Date Found | Date when the job opportunity was collected by the automation |
+| Company | Name of the hiring company |
+| Position | Job title or position name |
+| Location | Job location information |
+| Source | Origin of the job posting (e.g. Karriere.at, LinkedIn Job Alerts) |
+| URL | Direct link to the original job advertisement |
+| Description | Job description or extracted summary information |
+| Score | Optional relevance score used for prioritization |
+| Status | Tracking status of the opportunity (e.g. New, Applied, Interview, Rejected) |
+| Notes | Additional comments or personal tracking information |
+| UniqueKey | Technical identifier used for duplicate detection |
+
+---
+
+## Data Flow
+
+The data model is designed to support the complete lifecycle of a job opportunity:
+
+1. A new vacancy is collected from a source.
+2. Relevant information is extracted and mapped into the standardized structure.
+3. A unique identifier is generated for duplicate checking.
+4. The record is stored in the central database.
+5. The opportunity can be reviewed and tracked through its status.
 
 ---
 
 ## Data Standardization
 
-Because different sources present job information differently, all collected records are transformed into a common structure before storage.
+Since different sources provide job information in different formats, the collected data is transformed into a consistent structure.
 
-The standardization process includes:
+Standardization activities include:
 
-- consistent field mapping
-- URL normalization
-- whitespace cleanup
-- validation of required fields
-- handling of missing values
-
-This ensures that every record follows the same format regardless of its origin.
+- mapping source-specific fields into common attributes
+- cleaning text fields
+- normalizing URLs
+- validating required information
+- generating unique identifiers
 
 ---
 
-## Data Quality
+## Data Quality Management
 
-The workflow performs basic quality checks before storing new records.
+The data model supports basic data quality controls:
 
-These include:
-
-- mandatory field validation
-- duplicate detection
-- standardized formatting
-- consistent source identification
+- prevention of duplicate job records
+- consistent source tracking
+- structured storage of job information
+- traceability of collected opportunities
 
 ---
 
-## Benefits
+## Future Analytics Potential
 
-Using a standardized data model enables:
+The structured dataset provides a foundation for future enhancements, including:
 
-- faster job review
-- easier filtering and searching
-- consistent reporting
-- scalable integration of additional job sources
-- future dashboard and analytics development
+- job market trend analysis
+- company activity tracking
+- skill demand analysis
+- application funnel reporting
+- dashboard visualization
