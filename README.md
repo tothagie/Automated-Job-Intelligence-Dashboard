@@ -58,12 +58,23 @@ From a business analysis perspective, the project demonstrates how a repetitive 
 
 This project demonstrates end-to-end solution design rather than simply writing a script. It includes business process analysis, workflow automation, data collection, data quality management, duplicate detection, information standardisation and automated scheduling.
 
-## Roadmap
-
-The current version serves as the foundation for a broader Job Market Intelligence platform. Planned enhancements include additional job portals, configurable search profiles, Power BI dashboards, trend analysis, salary extraction and automated reporting.
-
 ## Demo
 
 Example output from the automated job intelligence database:
 
 ![Job Database Preview](images/job-database-preview.png)
+
+## Roadmap
+
+The current version provides the foundation for a scalable Job Market Intelligence platform. Future enhancements focus on improving data coverage, analysis capabilities and decision support.
+
+Planned improvements:
+
+- Integration of additional job sources and career portals
+- Configurable search profiles based on roles, skills and locations
+- Advanced duplicate detection and job consolidation
+- Power BI dashboards for market overview and application tracking
+- Trend analysis of job demand, required skills and technologies
+- Salary range extraction and market benchmarking
+- Automated weekly job market reports and insights
+- AI-assisted matching between job requirements and candidate profiles
